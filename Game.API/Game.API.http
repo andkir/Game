@@ -1,0 +1,18 @@
+@Game.API_HostAddress = http://localhost:8080
+
+GET {{Game.API_HostAddress}}/api/game/choices
+Accept: application/json
+
+###
+
+GET {{Game.API_HostAddress}}/api/game/choice
+Accept: application/json
+
+###
+
+POST {{Game.API_HostAddress}}/api/game/play
+Content-Type: application/json
+
+{
+    "player": 1
+}

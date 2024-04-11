@@ -1,0 +1,8 @@
+﻿services:
+  game.api:
+    image: game.api
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: Game.API/Dockerfile
